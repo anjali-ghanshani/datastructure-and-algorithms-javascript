@@ -1,0 +1,55 @@
+<mxfile host="65bd71144e">
+    <diagram id="J0BU5uh6VnGHpy-MeXnG" name="Page-1">
+        <mxGraphModel dx="1541" dy="495" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="11" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="200" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="3" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="200" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="7" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="200" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="next" style="shape=singleArrow;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="220" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="next" style="shape=singleArrow;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="220" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="next" style="shape=singleArrow;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="220" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="head" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-45" y="130" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="tail" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="435" y="130" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="unshift(value)" style="shape=singleArrow;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-70" y="490" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="shift()" style="shape=singleArrow;direction=west;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-80" y="410" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="22" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="-70" y="200" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="next" style="shape=singleArrow;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="220" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="temp" style="shape=singleArrow;direction=north;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-45" y="290" width="30" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="pop(value)" style="shape=singleArrow;direction=west;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="400" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="pop()" style="shape=singleArrow;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="320" width="100" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
