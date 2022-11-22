@@ -93,7 +93,7 @@ class linkedList {
         // if index is zero (unshift)
         if (index === 0) return this.unshift(value)
         // if  index is the last node of linkedList (push)
-        if (index === this.length) return push(value)
+        if (index === this.length - 1) return this.push(value)
         // if the index is less than 0 or greater than or equal to length of the linkedList (return false)
         if (index < 0 || index >= this.length) return false
         const newNode = new Node(value)
@@ -105,12 +105,12 @@ class linkedList {
         return this
     }
     remove(index) {
-        if (index === 0) return shift()
-        if (index === this.length - 1) return pop()
+        if (index === 0) return this.shift()
+        if (index === this.length - 1) return this.pop()
         if (index < 0 || index >= this.length) return undefined
-        let prev = this.get(index - 1)
-        let temp = prev.next
-        prev.next = temp.next
+        let before = this.get(index - 1)
+        let temp = before.next
+        before.next = temp.next
         temp.next = null
         this.length--
         return temp
@@ -139,11 +139,14 @@ class linkedList {
 
 
 
-const myLinkedList = new linkedList("first element")
-myLinkedList.push("second value");
-myLinkedList.push("third (last) value");
-// myLinkedList.insert(1, "inserted value")
+const myLinkedList = new linkedList(22)
+myLinkedList.push(11);
+myLinkedList.push(3);
+myLinkedList.push(7);
 
+// myLinkedList.insert(1, "inserted value")
+let abc = []
+let typee = typeof (abc);
 
 
 
