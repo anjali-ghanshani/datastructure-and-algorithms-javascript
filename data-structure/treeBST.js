@@ -52,6 +52,59 @@ class BST {
         }
         return currentNode
     }
+
+    //  in Tree traversal you might go to each node of a tree and add them to an array and then return that array
+    // there are two ways of doing this
+    //  Breadth First Search | Depth FirstSearch
+    BFS() {
+        let currentNode = this.root
+        let queue = []
+        let results = []
+        queue.push(currentNode)
+
+        while (queue.length) {
+            currentNode = queue.shift()
+            results.push(currentNode.value)
+            if (currentNode.left) queue.push(currentNode.left)
+            if (currentNode.right) queue.push(currentNode.right)
+        }
+        return results
+    }
+
+    // DepthFirstSearch
+
+    DFSPreOrder() {
+        let results = []
+        function traverse(currentNode) {
+            results.push(currentNode.value)
+            if (currentNode.left) traverse(currentNode.left)
+            if (currentNode.right) traverse(currentNode.right)
+        }
+        traverse(this.root)
+        return results
+
+    }
+    DFSPostOrder() {
+        let results = []
+        function traverse(currentNode) {
+            if (currentNode.left) traverse(currentNode.left)
+            if (currentNode.right) traverse(currentNode.right)
+            results.push(currentNode.value)
+        }
+        traverse(this.root)
+        return results
+    }
+
+    DFSInorder() {
+        let results = []
+        function traverse(currentNode) {
+            if (currentNode.left) traverse(currentNode.left)
+            results.push(currentNode.value)
+            if (currentNode.right) traverse(currentNode.right)
+        }
+        traverse(this.root)
+        return results
+    }
 }
 
 let myTree = new BST()

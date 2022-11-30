@@ -29,6 +29,7 @@ class Graph {
             this.adjacencyList[vertex2] = this.adjacencyList[vertex2]
                 .filter(v => v !== vertex1)
         }
+        return this.adjacencyList
     }
     removeVertex(vertex) {
         if (!this.adjacencyList[vertex]) return undefined
@@ -52,7 +53,4 @@ myGraph.addEdge("A", "C")
 myGraph.addEdge("A", "D")
 myGraph.addEdge("B", "D")
 myGraph.addEdge("C", "D")
-
-
-
 
