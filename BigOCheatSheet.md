@@ -86,16 +86,16 @@ Factorial - you are adding a loop for every element
 
 # Rule Book
 
-Rule 1: Always worst case
-Rule2 : Remove Constants
+Rule 1: Always worst case <br>
+Rule2 : Remove Constants<br>
 Rule 3:
 
 - Different inputs should have different variables: O(a+b)
 - A and B arrays nested would be: O(a\*b)
 
-* for steps in order
+- for steps in order (a+b)
 
-- for nested steps
+- for nested steps (a\*b)
 
 Rule4 : Drop Non-dominant Terms
 
@@ -105,3 +105,6 @@ Rule4 : Drop Non-dominant Terms
 - Datastructures
 - Function Calls
 - Allocations
+  <br>
+
+## Data Structures + Algorithms = Programs
