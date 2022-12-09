@@ -1,6 +1,6 @@
 //  Last in first out (LIFO)
 
-
+// 1 -> 2-> 3->
 
 
 class Node {

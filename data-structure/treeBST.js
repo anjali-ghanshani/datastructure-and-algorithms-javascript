@@ -1,5 +1,13 @@
 //every node points to two or zero nodes - full tree
 
+// practical implementation of tree are
+/* 
+fb comments 
+folder structure on the repository
+DOM structure
+
+ */
+
 class Node {
     constructor(value) {
         this.value = value
@@ -37,7 +45,7 @@ class BST {
     contains(value) {
         if (this.root === null) return false
         let temp = this.root
-        while (temp) {
+        while (temvaluep) {
             if (value < temp.value) {
                 temp = temp.left
             } else if (value > temp.value) {
