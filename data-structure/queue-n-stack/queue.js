@@ -45,3 +45,6 @@ class Queue {
 const q = new Queue(1)
 q.enqueue(11)
 q.enqueue(33)
+
+
+//  Limited Ability is where stacks and queues shine

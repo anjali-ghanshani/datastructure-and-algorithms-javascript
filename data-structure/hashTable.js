@@ -17,7 +17,7 @@ class HashTable {
     constructor(size = 7) {
         this.dataMap = new Array(size)
     }
-    _hash(key) {
+    _hash(key) { // [_] is to indicate that this property is private to the class.
         let hash = 0
         for (let i = 0; i < key.length; i++) {
             hash = (hash + key.charCodeAt(1) * 23) % this.dataMap.length
@@ -31,7 +31,7 @@ class HashTable {
         }
         this.dataMap[index].push([key, value])
         return this
-    }
+    } // O(1)
 
     get(key) {
         let index = this._hash(key)
@@ -42,7 +42,7 @@ class HashTable {
             }
         }
 
-    }
+    } // O(1), but its O(n) in case of hash collision
 
     keys() {
         let allKeys = []
@@ -67,3 +67,4 @@ abc.set("pipes", 3000)
 abc.set("screws", 4000)
 abc.set("toys", 500)
 
+console.log(abc.keys())

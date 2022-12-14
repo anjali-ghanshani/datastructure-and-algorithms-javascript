@@ -89,6 +89,11 @@ class linkedList {
         return false
     }
 
+    printList() {
+        const array = []
+        let currentNode = this.head
+    }
+
     insert(index, value) {
         // if index is zero (unshift)
         if (index === 0) return this.unshift(value)
@@ -118,12 +123,13 @@ class linkedList {
 
 
     reverse() {
+        if (!this.head.next) return this.head
+
         let temp = this.head
         this.head = this.tail
         this.tail = temp
         let next = temp.next
         let prev = null
-
         for (let i = 0; i < this.length; i++) {
             next = temp.next
             temp.next = prev
