@@ -45,7 +45,7 @@ class BST {
     contains(value) {
         if (this.root === null) return false
         let temp = this.root
-        while (temvaluep) {
+        while (temp) {
             if (value < temp.value) {
                 temp = temp.left
             } else if (value > temp.value) {
@@ -54,11 +54,27 @@ class BST {
         }
         return false
     }
-    minValueNode(currentNode) {
+
+    minValueNode() {
+        let currentNode = this.root
+        if (!this.root) return false
+
         while (currentNode.left != null) {
             currentNode = currentNode.left
         }
-        return currentNode
+        return currentNode.value
+    }
+
+    remove() {
+        if (!this.root) return false
+        let temp = this.root
+        if (value > temp.value) {
+            temp = temp.right
+        } else if (value < temp.value) {
+            temp = temp.left
+        } else {
+
+        }
     }
 
     //  in Tree traversal you might go to each node of a tree and add them to an array and then return that array
@@ -81,6 +97,7 @@ class BST {
 
     // DepthFirstSearch
 
+
     DFSPreOrder() {
         let results = []
         function traverse(currentNode) {
@@ -90,8 +107,8 @@ class BST {
         }
         traverse(this.root)
         return results
-
     }
+
     DFSPostOrder() {
         let results = []
         function traverse(currentNode) {
@@ -124,5 +141,3 @@ myTree.insert(18)
 myTree.insert(27)
 myTree.insert(52)
 myTree.insert(82)
-
-

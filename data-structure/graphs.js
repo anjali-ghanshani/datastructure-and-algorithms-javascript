@@ -1,5 +1,12 @@
-// adjacency
-
+// adjacencyList = {
+/* 
+A: [E, B],
+B: [A ],
+C: [D],
+D: [E, C],
+E: [A, D]
+}
+*/
 class Graph {
     constructor() {
         this.adjacencyList = {}
@@ -51,6 +58,6 @@ myGraph.addVertex("D")
 myGraph.addEdge("A", "B")
 myGraph.addEdge("A", "C")
 myGraph.addEdge("A", "D")
-myGraph.addEdge("B", "D")
-myGraph.addEdge("C", "D")
-
+myGraph.addEdge("B", "C")
+myGraph.addEdge("C", "B")
+// myGraph.removeEdge("B", "C");

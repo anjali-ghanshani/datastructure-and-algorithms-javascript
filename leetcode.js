@@ -32,30 +32,30 @@
 
 
 
-function primeFactors(n) {
-    const factors = [];
-    let divisor = 2;
-    let sum = 0
-    while (n >= 2) {
-        if (n % divisor == 0) {
-            factors.push(divisor);
-            n = n / divisor;
-        }
-        else {
-            divisor++;
-        }
-    }
+// function primeFactors(n) {
+//     const factors = [];
+//     let divisor = 2;
+//     let sum = 0
+//     while (n >= 2) {
+//         if (n % divisor == 0) {
+//             factors.push(divisor);
+//             n = n / divisor;
+//         }
+//         else {
+//             divisor++;
+//         }
+//     }
 
-    for (const v of factors) {
-        sum += v;
-    }
+//     for (const v of factors) {
+//         sum += v;
+//     }
 
 
 
-    if (factors.length === 1) return sum
-    else return primeFactors(sum);
+//     if (factors.length === 1) return sum
+//     else return primeFactors(sum);
 
-}
+// }
 
 // console.log(primeFactors(10 ^ 5));
 // primeFactors(8);
@@ -66,14 +66,4 @@ function primeFactors(n) {
 // const randomNumber = Math.floor(Math.random() * 10000);
 // console.log('Prime factors of', randomNumber + ':', primeFactors(randomNumber))
 
-
-
-const myGraph = new Graph()
-myGraph.addVertex(0);
-myGraph.addVertex(1);
-myGraph.addVertex(2);
-myGraph.addEdge(0, 1);
-myGraph.addEdge(1, 2);
-myGraph.addEdge(2, 0);
-console.log(myGraph.adjacencyList());
 

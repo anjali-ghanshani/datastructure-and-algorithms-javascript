@@ -136,5 +136,4 @@ const myLinkedList = new DoublyLinkedList(22)
 myLinkedList.push(11);
 myLinkedList.push(3);
 myLinkedList.push(7);
-
 myLinkedList.get(1);
